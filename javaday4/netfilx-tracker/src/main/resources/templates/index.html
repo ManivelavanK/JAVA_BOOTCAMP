@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Netflix Tracker</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header>
+    <h1>Netflix Tracker</h1>
+    <nav>
+        <a th:href="@{/movies}">Movies</a>
+        <a th:href="@{/users}">Users</a>
+        <a th:href="@{/watch-history}">Watch History</a>
+        <a th:href="@{/recommendations}">Recommendations</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Welcome to Netflix Tracker 🎬</h2>
+    <p>Track what you watch, rate movies, and get smart recommendations.</p>
+</div>
+</body>
+</html>

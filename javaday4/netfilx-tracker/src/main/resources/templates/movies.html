@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Movies</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header>
+    <h1>Movies</h1>
+    <nav>
+        <a th:href="@{/}">Home</a>
+        <a th:href="@{/users}">Users</a>
+        <a th:href="@{/watch-history}">Watch History</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Available Movies</h2>
+    <div th:each="movie : ${movies}" class="movie-card">
+        <h3 th:text="${movie.title}"></h3>
+        <p th:text="'Genre: ' + ${movie.genre}"></p>
+        <p th:text="'Rating: ' + ${movie.rating}"></p>
+        <button>Watch</button>
+    </div>
+</div>
+</body>
+</html>

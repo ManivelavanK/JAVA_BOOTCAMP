@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Users</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header>
+    <h1>Users</h1>
+    <nav>
+        <a th:href="@{/}">Home</a>
+        <a th:href="@{/movies}">Movies</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Registered Users</h2>
+    <ul>
+        <li th:each="user : ${users}" th:text="${user.username} + ' (' + ${user.email} + ')'"></li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Watch History</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header>
+    <h1>Watch History</h1>
+    <nav>
+        <a th:href="@{/}">Home</a>
+        <a th:href="@{/movies}">Movies</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Watch History</h2>
+    <table>
+        <tr>
+            <th>User</th>
+            <th>Movie</th>
+            <th>Date Watched</th>
+        </tr>
+        <tr th:each="item : ${history}">
+            <td th:text="${item.user.username}"></td>
+            <td th:text="${item.movie.title}"></td>
+            <td th:text="${item.dateWatched}"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
