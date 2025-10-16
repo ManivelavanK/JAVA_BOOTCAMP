@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header>Welcome to Student Management</header>
+<div class="container">
+  <h2>Home Page</h2>
+  <p>
+    <a th:href="@{/login}">Login</a> |
+    <a th:href="@{/register}">Register</a> |
+    <a th:href="@{/students/list}">Student List</a>
+  </p>
+</div>
+</body>
+</html>

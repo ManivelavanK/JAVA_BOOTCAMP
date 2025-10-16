@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffb400;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+}
+
+.hero-content span {
+    color: #ffeb3b;
+}
+
+.hero-content p {
+    margin: 10px 0 20px;
+}
+
+.btn {
+    background-color: white;
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #ffb400;
+    color: white;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e9ecef;
+}
+
+.contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
